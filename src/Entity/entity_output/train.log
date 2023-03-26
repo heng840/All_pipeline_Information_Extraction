@@ -1,0 +1,668 @@
+['run_entity.py', '--learning_rate=1e-5', '--task_learning_rate=5e-4', '--train_batch_size=16', '--context_window=300', '--task=scierc', '--data_dir=/home/chenyuheng/chenyuheng/DataSets/sciERC_processed/processed_data/json', '--model=bert-base-uncased', '--output_dir=entity_output']
+Namespace(bert_model_dir=None, bertadam=False, context_window=300, data_dir='/home/chenyuheng/chenyuheng/DataSets/sciERC_processed/processed_data/json', dev_data_path='/home/chenyuheng/chenyuheng/DataSets/sciERC_processed/processed_data/json/dev.json', dev_pred_filename='ent_pred_dev.json', do_eval=True, do_train=True, eval_batch_size=8, eval_per_epoch=1, eval_test=False, learning_rate=1e-05, max_span_length=8, model='bert-base-uncased', num_epoch=100, output_dir='entity_output', print_loss_step=100, seed=42, task='scierc', task_learning_rate=0.0005, test_data_path='/home/chenyuheng/chenyuheng/DataSets/sciERC_processed/processed_data/json/test.json', test_pred_filename='ent_pred_test.json', train_batch_size=16, train_data_path='/home/chenyuheng/chenyuheng/DataSets/sciERC_processed/processed_data/json/train.json', train_shuffle=True, use_albert=False, warmup_proportion=0.1)
+Moving to CUDA...
+# GPUs = 1
+# Overlap: 0
+Extracted 275 samples from 50 documents, with 811 NER labels, 138.455 avg input length, 226 max length
+Max Length: 68, max NER: 11
+# Overlap: 0
+Extracted 1861 samples from 350 documents, with 5598 NER labels, 140.335 avg input length, 300 max length
+Max Length: 101, max NER: 13
+Epoch=0, iter=99, loss=296.29362
+Evaluating...
+Accuracy: 0.981875
+Cor: 0, Pred TOT: 0, Gold TOT: 811
+P: 0.00000, R: 0.00000, F1: 0.00000
+Used time: 4.184786
+Epoch=1, iter=82, loss=34.81564
+Evaluating...
+Accuracy: 0.981875
+Cor: 0, Pred TOT: 0, Gold TOT: 811
+P: 0.00000, R: 0.00000, F1: 0.00000
+Used time: 4.106314
+Epoch=2, iter=65, loss=20.35025
+Evaluating...
+Accuracy: 0.981875
+Cor: 0, Pred TOT: 0, Gold TOT: 811
+P: 0.00000, R: 0.00000, F1: 0.00000
+Used time: 4.094364
+Epoch=3, iter=48, loss=18.02851
+Evaluating...
+Accuracy: 0.981875
+Cor: 0, Pred TOT: 0, Gold TOT: 811
+P: 0.00000, R: 0.00000, F1: 0.00000
+Used time: 4.415459
+Epoch=4, iter=31, loss=14.08265
+Evaluating...
+Accuracy: 0.981875
+Cor: 0, Pred TOT: 0, Gold TOT: 811
+P: 0.00000, R: 0.00000, F1: 0.00000
+Used time: 4.140408
+Epoch=5, iter=14, loss=11.37307
+Epoch=5, iter=114, loss=9.40467
+Evaluating...
+Accuracy: 0.984955
+Cor: 178, Pred TOT: 304, Gold TOT: 811
+P: 0.58553, R: 0.21948, F1: 0.31928
+Used time: 4.265033
+!!! Best valid (epoch=5): 31.93
+Saving model to entity_output...
+Epoch=6, iter=97, loss=8.24780
+Evaluating...
+Accuracy: 0.986350
+Cor: 276, Pred TOT: 489, Gold TOT: 811
+P: 0.56442, R: 0.34032, F1: 0.42462
+Used time: 4.126385
+!!! Best valid (epoch=6): 42.46
+Saving model to entity_output...
+Epoch=7, iter=80, loss=7.27482
+Evaluating...
+Accuracy: 0.986912
+Cor: 295, Pred TOT: 476, Gold TOT: 811
+P: 0.61975, R: 0.36375, F1: 0.45843
+Used time: 5.098823
+!!! Best valid (epoch=7): 45.84
+Saving model to entity_output...
+Epoch=8, iter=63, loss=6.71556
+Evaluating...
+Accuracy: 0.987924
+Cor: 401, Pred TOT: 656, Gold TOT: 811
+P: 0.61128, R: 0.49445, F1: 0.54669
+Used time: 4.500513
+!!! Best valid (epoch=8): 54.67
+Saving model to entity_output...
+Epoch=9, iter=46, loss=5.79713
+Evaluating...
+Accuracy: 0.987879
+Cor: 475, Pred TOT: 822, Gold TOT: 811
+P: 0.57786, R: 0.58570, F1: 0.58175
+Used time: 4.651489
+!!! Best valid (epoch=9): 58.18
+Saving model to entity_output...
+Epoch=10, iter=29, loss=5.13381
+Evaluating...
+Accuracy: 0.989790
+Cor: 497, Pred TOT: 722, Gold TOT: 811
+P: 0.68837, R: 0.61282, F1: 0.64840
+Used time: 4.356318
+!!! Best valid (epoch=10): 64.84
+Saving model to entity_output...
+Epoch=11, iter=12, loss=4.18235
+Epoch=11, iter=112, loss=3.58181
+Evaluating...
+Accuracy: 0.989858
+Cor: 534, Pred TOT: 787, Gold TOT: 811
+P: 0.67853, R: 0.65845, F1: 0.66834
+Used time: 4.498511
+!!! Best valid (epoch=11): 66.83
+Saving model to entity_output...
+Epoch=12, iter=95, loss=2.99440
+Evaluating...
+Accuracy: 0.989611
+Cor: 552, Pred TOT: 840, Gold TOT: 811
+P: 0.65714, R: 0.68064, F1: 0.66869
+Used time: 4.343494
+!!! Best valid (epoch=12): 66.87
+Saving model to entity_output...
+Epoch=13, iter=78, loss=2.67862
+Evaluating...
+Accuracy: 0.989813
+Cor: 559, Pred TOT: 852, Gold TOT: 811
+P: 0.65610, R: 0.68927, F1: 0.67228
+Used time: 4.503845
+!!! Best valid (epoch=13): 67.23
+Saving model to entity_output...
+Epoch=14, iter=61, loss=2.32642
+Evaluating...
+Accuracy: 0.990173
+Cor: 516, Pred TOT: 729, Gold TOT: 811
+P: 0.70782, R: 0.63625, F1: 0.67013
+Used time: 4.547259
+Epoch=15, iter=44, loss=2.03443
+Evaluating...
+Accuracy: 0.990083
+Cor: 546, Pred TOT: 797, Gold TOT: 811
+P: 0.68507, R: 0.67324, F1: 0.67910
+Used time: 4.881165
+!!! Best valid (epoch=15): 67.91
+Saving model to entity_output...
+Epoch=16, iter=27, loss=1.74863
+Evaluating...
+Accuracy: 0.990263
+Cor: 552, Pred TOT: 796, Gold TOT: 811
+P: 0.69347, R: 0.68064, F1: 0.68699
+Used time: 4.837330
+!!! Best valid (epoch=16): 68.70
+Saving model to entity_output...
+Epoch=17, iter=10, loss=1.50511
+Epoch=17, iter=110, loss=1.29979
+Evaluating...
+Accuracy: 0.989948
+Cor: 578, Pred TOT: 874, Gold TOT: 811
+P: 0.66133, R: 0.71270, F1: 0.68605
+Used time: 4.443022
+Epoch=18, iter=93, loss=1.08871
+Evaluating...
+Accuracy: 0.990420
+Cor: 538, Pred TOT: 766, Gold TOT: 811
+P: 0.70235, R: 0.66338, F1: 0.68231
+Used time: 4.557865
+Epoch=19, iter=76, loss=0.97520
+Evaluating...
+Accuracy: 0.989948
+Cor: 559, Pred TOT: 839, Gold TOT: 811
+P: 0.66627, R: 0.68927, F1: 0.67758
+Used time: 4.349488
+Epoch=20, iter=59, loss=0.83208
+Evaluating...
+Accuracy: 0.990060
+Cor: 560, Pred TOT: 824, Gold TOT: 811
+P: 0.67961, R: 0.69051, F1: 0.68502
+Used time: 5.078193
+Epoch=21, iter=42, loss=0.73111
+Evaluating...
+Accuracy: 0.989858
+Cor: 554, Pred TOT: 824, Gold TOT: 811
+P: 0.67233, R: 0.68311, F1: 0.67768
+Used time: 4.373395
+Epoch=22, iter=25, loss=0.78583
+Evaluating...
+Accuracy: 0.989858
+Cor: 550, Pred TOT: 823, Gold TOT: 811
+P: 0.66829, R: 0.67818, F1: 0.67319
+Used time: 4.425228
+Epoch=23, iter=8, loss=0.58061
+Epoch=23, iter=108, loss=0.55749
+Evaluating...
+Accuracy: 0.990488
+Cor: 549, Pred TOT: 780, Gold TOT: 811
+P: 0.70385, R: 0.67694, F1: 0.69013
+Used time: 4.406125
+!!! Best valid (epoch=23): 69.01
+Saving model to entity_output...
+Epoch=24, iter=91, loss=0.54662
+Evaluating...
+Accuracy: 0.989925
+Cor: 542, Pred TOT: 804, Gold TOT: 811
+P: 0.67413, R: 0.66831, F1: 0.67121
+Used time: 4.426447
+Epoch=25, iter=74, loss=0.46387
+Evaluating...
+Accuracy: 0.989880
+Cor: 564, Pred TOT: 860, Gold TOT: 811
+P: 0.65581, R: 0.69544, F1: 0.67504
+Used time: 4.405498
+Epoch=26, iter=57, loss=0.42435
+Evaluating...
+Accuracy: 0.990308
+Cor: 540, Pred TOT: 769, Gold TOT: 811
+P: 0.70221, R: 0.66584, F1: 0.68354
+Used time: 4.493961
+Epoch=27, iter=40, loss=0.38106
+Evaluating...
+Accuracy: 0.990083
+Cor: 549, Pred TOT: 803, Gold TOT: 811
+P: 0.68369, R: 0.67694, F1: 0.68030
+Used time: 4.457610
+Epoch=28, iter=23, loss=0.35151
+Evaluating...
+Accuracy: 0.990128
+Cor: 559, Pred TOT: 822, Gold TOT: 811
+P: 0.68005, R: 0.68927, F1: 0.68463
+Used time: 4.843348
+Epoch=29, iter=6, loss=0.34237
+Epoch=29, iter=106, loss=0.31033
+Evaluating...
+Accuracy: 0.990488
+Cor: 534, Pred TOT: 748, Gold TOT: 811
+P: 0.71390, R: 0.65845, F1: 0.68505
+Used time: 4.476141
+Epoch=30, iter=89, loss=0.31142
+Evaluating...
+Accuracy: 0.989970
+Cor: 559, Pred TOT: 834, Gold TOT: 811
+P: 0.67026, R: 0.68927, F1: 0.67964
+Used time: 4.468846
+Epoch=31, iter=72, loss=0.25547
+Evaluating...
+Accuracy: 0.989633
+Cor: 543, Pred TOT: 821, Gold TOT: 811
+P: 0.66139, R: 0.66954, F1: 0.66544
+Used time: 4.549857
+Epoch=32, iter=55, loss=0.23602
+Evaluating...
+Accuracy: 0.990015
+Cor: 553, Pred TOT: 822, Gold TOT: 811
+P: 0.67275, R: 0.68187, F1: 0.67728
+Used time: 4.344617
+Epoch=33, iter=38, loss=0.21654
+Evaluating...
+Accuracy: 0.990195
+Cor: 546, Pred TOT: 786, Gold TOT: 811
+P: 0.69466, R: 0.67324, F1: 0.68378
+Used time: 4.399587
+Epoch=34, iter=21, loss=0.20966
+Evaluating...
+Accuracy: 0.989745
+Cor: 553, Pred TOT: 834, Gold TOT: 811
+P: 0.66307, R: 0.68187, F1: 0.67234
+Used time: 4.372017
+Epoch=35, iter=4, loss=0.22728
+Epoch=35, iter=104, loss=0.18816
+Evaluating...
+Accuracy: 0.990105
+Cor: 560, Pred TOT: 823, Gold TOT: 811
+P: 0.68044, R: 0.69051, F1: 0.68543
+Used time: 4.392962
+Epoch=36, iter=87, loss=0.20252
+Evaluating...
+Accuracy: 0.989948
+Cor: 559, Pred TOT: 833, Gold TOT: 811
+P: 0.67107, R: 0.68927, F1: 0.68005
+Used time: 4.324257
+Epoch=37, iter=70, loss=0.15782
+Evaluating...
+Accuracy: 0.990263
+Cor: 542, Pred TOT: 780, Gold TOT: 811
+P: 0.69487, R: 0.66831, F1: 0.68133
+Used time: 4.442704
+Epoch=38, iter=53, loss=0.16957
+Evaluating...
+Accuracy: 0.990128
+Cor: 555, Pred TOT: 817, Gold TOT: 811
+P: 0.67931, R: 0.68434, F1: 0.68182
+Used time: 4.439402
+Epoch=39, iter=36, loss=0.15383
+Evaluating...
+Accuracy: 0.989993
+Cor: 548, Pred TOT: 813, Gold TOT: 811
+P: 0.67405, R: 0.67571, F1: 0.67488
+Used time: 4.390633
+Epoch=40, iter=19, loss=0.17141
+Evaluating...
+Accuracy: 0.989993
+Cor: 540, Pred TOT: 794, Gold TOT: 811
+P: 0.68010, R: 0.66584, F1: 0.67290
+Used time: 4.537654
+Epoch=41, iter=2, loss=0.16686
+Epoch=41, iter=102, loss=0.14039
+Evaluating...
+Accuracy: 0.990150
+Cor: 547, Pred TOT: 803, Gold TOT: 811
+P: 0.68120, R: 0.67448, F1: 0.67782
+Used time: 4.400888
+Epoch=42, iter=85, loss=0.15100
+Evaluating...
+Accuracy: 0.990038
+Cor: 551, Pred TOT: 821, Gold TOT: 811
+P: 0.67113, R: 0.67941, F1: 0.67525
+Used time: 4.684985
+Epoch=43, iter=68, loss=0.15070
+Evaluating...
+Accuracy: 0.990533
+Cor: 564, Pred TOT: 816, Gold TOT: 811
+P: 0.69118, R: 0.69544, F1: 0.69330
+Used time: 4.411721
+!!! Best valid (epoch=43): 69.33
+Saving model to entity_output...
+Epoch=44, iter=51, loss=0.12763
+Evaluating...
+Accuracy: 0.990285
+Cor: 553, Pred TOT: 808, Gold TOT: 811
+P: 0.68441, R: 0.68187, F1: 0.68314
+Used time: 4.736230
+Epoch=45, iter=34, loss=0.12111
+Evaluating...
+Accuracy: 0.990173
+Cor: 554, Pred TOT: 815, Gold TOT: 811
+P: 0.67975, R: 0.68311, F1: 0.68143
+Used time: 4.390512
+Epoch=46, iter=17, loss=0.09922
+Evaluating...
+Accuracy: 0.990173
+Cor: 547, Pred TOT: 802, Gold TOT: 811
+P: 0.68204, R: 0.67448, F1: 0.67824
+Used time: 4.448102
+Epoch=47, iter=0, loss=0.10376
+Epoch=47, iter=100, loss=0.10281
+Evaluating...
+Accuracy: 0.990150
+Cor: 552, Pred TOT: 812, Gold TOT: 811
+P: 0.67980, R: 0.68064, F1: 0.68022
+Used time: 4.335460
+Epoch=48, iter=83, loss=0.09338
+Evaluating...
+Accuracy: 0.990398
+Cor: 554, Pred TOT: 799, Gold TOT: 811
+P: 0.69337, R: 0.68311, F1: 0.68820
+Used time: 4.327430
+Epoch=49, iter=66, loss=0.10276
+Evaluating...
+Accuracy: 0.990240
+Cor: 550, Pred TOT: 808, Gold TOT: 811
+P: 0.68069, R: 0.67818, F1: 0.67943
+Used time: 4.510676
+Epoch=50, iter=49, loss=0.09582
+Evaluating...
+Accuracy: 0.990353
+Cor: 564, Pred TOT: 820, Gold TOT: 811
+P: 0.68780, R: 0.69544, F1: 0.69160
+Used time: 4.413466
+Epoch=51, iter=32, loss=0.09389
+Evaluating...
+Accuracy: 0.990465
+Cor: 561, Pred TOT: 823, Gold TOT: 811
+P: 0.68165, R: 0.69174, F1: 0.68666
+Used time: 4.489329
+Epoch=52, iter=15, loss=0.09717
+Epoch=52, iter=115, loss=0.09171
+Evaluating...
+Accuracy: 0.990173
+Cor: 575, Pred TOT: 859, Gold TOT: 811
+P: 0.66938, R: 0.70900, F1: 0.68862
+Used time: 4.475472
+Epoch=53, iter=98, loss=0.09425
+Evaluating...
+Accuracy: 0.990443
+Cor: 556, Pred TOT: 804, Gold TOT: 811
+P: 0.69154, R: 0.68557, F1: 0.68854
+Used time: 4.659772
+Epoch=54, iter=81, loss=0.08575
+Evaluating...
+Accuracy: 0.990645
+Cor: 577, Pred TOT: 834, Gold TOT: 811
+P: 0.69185, R: 0.71147, F1: 0.70152
+Used time: 4.534446
+!!! Best valid (epoch=54): 70.15
+Saving model to entity_output...
+Epoch=55, iter=64, loss=0.06218
+Evaluating...
+Accuracy: 0.990488
+Cor: 543, Pred TOT: 777, Gold TOT: 811
+P: 0.69884, R: 0.66954, F1: 0.68388
+Used time: 4.709484
+Epoch=56, iter=47, loss=0.12260
+Evaluating...
+Accuracy: 0.990465
+Cor: 541, Pred TOT: 782, Gold TOT: 811
+P: 0.69182, R: 0.66708, F1: 0.67922
+Used time: 4.473569
+Epoch=57, iter=30, loss=0.07207
+Evaluating...
+Accuracy: 0.990443
+Cor: 553, Pred TOT: 801, Gold TOT: 811
+P: 0.69039, R: 0.68187, F1: 0.68610
+Used time: 4.393811
+Epoch=58, iter=13, loss=0.05973
+Epoch=58, iter=113, loss=0.07881
+Evaluating...
+Accuracy: 0.990510
+Cor: 553, Pred TOT: 793, Gold TOT: 811
+P: 0.69735, R: 0.68187, F1: 0.68953
+Used time: 4.532206
+Epoch=59, iter=96, loss=0.07022
+Evaluating...
+Accuracy: 0.990443
+Cor: 558, Pred TOT: 807, Gold TOT: 811
+P: 0.69145, R: 0.68804, F1: 0.68974
+Used time: 4.292352
+Epoch=60, iter=79, loss=0.07023
+Evaluating...
+Accuracy: 0.990555
+Cor: 553, Pred TOT: 791, Gold TOT: 811
+P: 0.69912, R: 0.68187, F1: 0.69039
+Used time: 4.454860
+Epoch=61, iter=62, loss=0.09028
+Evaluating...
+Accuracy: 0.990645
+Cor: 556, Pred TOT: 797, Gold TOT: 811
+P: 0.69762, R: 0.68557, F1: 0.69154
+Used time: 4.548476
+Epoch=62, iter=45, loss=0.07139
+Evaluating...
+Accuracy: 0.990375
+Cor: 562, Pred TOT: 826, Gold TOT: 811
+P: 0.68039, R: 0.69297, F1: 0.68662
+Used time: 4.331990
+Epoch=63, iter=28, loss=0.07845
+Evaluating...
+Accuracy: 0.990285
+Cor: 537, Pred TOT: 777, Gold TOT: 811
+P: 0.69112, R: 0.66215, F1: 0.67632
+Used time: 4.464655
+Epoch=64, iter=11, loss=0.05874
+Epoch=64, iter=111, loss=0.05699
+Evaluating...
+Accuracy: 0.990195
+Cor: 558, Pred TOT: 826, Gold TOT: 811
+P: 0.67554, R: 0.68804, F1: 0.68173
+Used time: 4.448923
+Epoch=65, iter=94, loss=0.06012
+Evaluating...
+Accuracy: 0.990263
+Cor: 547, Pred TOT: 802, Gold TOT: 811
+P: 0.68204, R: 0.67448, F1: 0.67824
+Used time: 4.438516
+Epoch=66, iter=77, loss=0.04886
+Evaluating...
+Accuracy: 0.990353
+Cor: 551, Pred TOT: 805, Gold TOT: 811
+P: 0.68447, R: 0.67941, F1: 0.68193
+Used time: 4.397911
+Epoch=67, iter=60, loss=0.04103
+Evaluating...
+Accuracy: 0.990510
+Cor: 540, Pred TOT: 764, Gold TOT: 811
+P: 0.70681, R: 0.66584, F1: 0.68571
+Used time: 4.455403
+Epoch=68, iter=43, loss=0.05649
+Evaluating...
+Accuracy: 0.990465
+Cor: 553, Pred TOT: 797, Gold TOT: 811
+P: 0.69385, R: 0.68187, F1: 0.68781
+Used time: 4.656343
+Epoch=69, iter=26, loss=0.04665
+Evaluating...
+Accuracy: 0.990398
+Cor: 555, Pred TOT: 808, Gold TOT: 811
+P: 0.68688, R: 0.68434, F1: 0.68561
+Used time: 4.391645
+Epoch=70, iter=9, loss=0.05729
+Epoch=70, iter=109, loss=0.04735
+Evaluating...
+Accuracy: 0.990015
+Cor: 547, Pred TOT: 815, Gold TOT: 811
+P: 0.67117, R: 0.67448, F1: 0.67282
+Used time: 4.473592
+Epoch=71, iter=92, loss=0.04212
+Evaluating...
+Accuracy: 0.990218
+Cor: 553, Pred TOT: 811, Gold TOT: 811
+P: 0.68187, R: 0.68187, F1: 0.68187
+Used time: 4.351439
+Epoch=72, iter=75, loss=0.04920
+Evaluating...
+Accuracy: 0.990443
+Cor: 559, Pred TOT: 807, Gold TOT: 811
+P: 0.69269, R: 0.68927, F1: 0.69098
+Used time: 4.418542
+Epoch=73, iter=58, loss=0.04811
+Evaluating...
+Accuracy: 0.990375
+Cor: 554, Pred TOT: 803, Gold TOT: 811
+P: 0.68991, R: 0.68311, F1: 0.68649
+Used time: 4.420797
+Epoch=74, iter=41, loss=0.03761
+Evaluating...
+Accuracy: 0.990263
+Cor: 561, Pred TOT: 823, Gold TOT: 811
+P: 0.68165, R: 0.69174, F1: 0.68666
+Used time: 4.419434
+Epoch=75, iter=24, loss=0.03724
+Evaluating...
+Accuracy: 0.990443
+Cor: 543, Pred TOT: 778, Gold TOT: 811
+P: 0.69794, R: 0.66954, F1: 0.68345
+Used time: 4.282111
+Epoch=76, iter=7, loss=0.04133
+Epoch=76, iter=107, loss=0.02409
+Evaluating...
+Accuracy: 0.990263
+Cor: 553, Pred TOT: 804, Gold TOT: 811
+P: 0.68781, R: 0.68187, F1: 0.68483
+Used time: 4.439697
+Epoch=77, iter=90, loss=0.04483
+Evaluating...
+Accuracy: 0.990488
+Cor: 566, Pred TOT: 819, Gold TOT: 811
+P: 0.69109, R: 0.69790, F1: 0.69448
+Used time: 4.455510
+Epoch=78, iter=73, loss=0.05802
+Evaluating...
+Accuracy: 0.990622
+Cor: 561, Pred TOT: 804, Gold TOT: 811
+P: 0.69776, R: 0.69174, F1: 0.69474
+Used time: 4.344924
+Epoch=79, iter=56, loss=0.03602
+Evaluating...
+Accuracy: 0.990375
+Cor: 552, Pred TOT: 801, Gold TOT: 811
+P: 0.68914, R: 0.68064, F1: 0.68486
+Used time: 4.400442
+Epoch=80, iter=39, loss=0.02927
+Evaluating...
+Accuracy: 0.990375
+Cor: 543, Pred TOT: 782, Gold TOT: 811
+P: 0.69437, R: 0.66954, F1: 0.68173
+Used time: 4.523703
+Epoch=81, iter=22, loss=0.04581
+Evaluating...
+Accuracy: 0.990375
+Cor: 554, Pred TOT: 804, Gold TOT: 811
+P: 0.68905, R: 0.68311, F1: 0.68607
+Used time: 4.699739
+Epoch=82, iter=5, loss=0.03711
+Epoch=82, iter=105, loss=0.03070
+Evaluating...
+Accuracy: 0.990420
+Cor: 555, Pred TOT: 801, Gold TOT: 811
+P: 0.69288, R: 0.68434, F1: 0.68859
+Used time: 5.046052
+Epoch=83, iter=88, loss=0.02902
+Evaluating...
+Accuracy: 0.990353
+Cor: 548, Pred TOT: 790, Gold TOT: 811
+P: 0.69367, R: 0.67571, F1: 0.68457
+Used time: 4.443334
+Epoch=84, iter=71, loss=0.03227
+Evaluating...
+Accuracy: 0.990308
+Cor: 550, Pred TOT: 801, Gold TOT: 811
+P: 0.68664, R: 0.67818, F1: 0.68238
+Used time: 4.412676
+Epoch=85, iter=54, loss=0.04147
+Evaluating...
+Accuracy: 0.990308
+Cor: 555, Pred TOT: 809, Gold TOT: 811
+P: 0.68603, R: 0.68434, F1: 0.68519
+Used time: 4.594772
+Epoch=86, iter=37, loss=0.02884
+Evaluating...
+Accuracy: 0.990308
+Cor: 556, Pred TOT: 809, Gold TOT: 811
+P: 0.68727, R: 0.68557, F1: 0.68642
+Used time: 4.363089
+Epoch=87, iter=20, loss=0.02598
+Evaluating...
+Accuracy: 0.990285
+Cor: 561, Pred TOT: 820, Gold TOT: 811
+P: 0.68415, R: 0.69174, F1: 0.68792
+Used time: 4.467259
+Epoch=88, iter=3, loss=0.01716
+Epoch=88, iter=103, loss=0.02905
+Evaluating...
+Accuracy: 0.990308
+Cor: 552, Pred TOT: 803, Gold TOT: 811
+P: 0.68742, R: 0.68064, F1: 0.68401
+Used time: 4.363229
+Epoch=89, iter=86, loss=0.01926
+Evaluating...
+Accuracy: 0.990443
+Cor: 558, Pred TOT: 803, Gold TOT: 811
+P: 0.69489, R: 0.68804, F1: 0.69145
+Used time: 4.372590
+Epoch=90, iter=69, loss=0.02724
+Evaluating...
+Accuracy: 0.990330
+Cor: 552, Pred TOT: 798, Gold TOT: 811
+P: 0.69173, R: 0.68064, F1: 0.68614
+Used time: 4.504454
+Epoch=91, iter=52, loss=0.01156
+Evaluating...
+Accuracy: 0.990308
+Cor: 553, Pred TOT: 803, Gold TOT: 811
+P: 0.68867, R: 0.68187, F1: 0.68525
+Used time: 4.495746
+Epoch=92, iter=35, loss=0.01829
+Evaluating...
+Accuracy: 0.990353
+Cor: 555, Pred TOT: 806, Gold TOT: 811
+P: 0.68859, R: 0.68434, F1: 0.68646
+Used time: 4.385332
+Epoch=93, iter=18, loss=0.01474
+Evaluating...
+Accuracy: 0.990330
+Cor: 547, Pred TOT: 787, Gold TOT: 811
+P: 0.69504, R: 0.67448, F1: 0.68461
+Used time: 4.392801
+Epoch=94, iter=1, loss=0.03088
+Epoch=94, iter=101, loss=0.01183
+Evaluating...
+Accuracy: 0.990240
+Cor: 547, Pred TOT: 793, Gold TOT: 811
+P: 0.68979, R: 0.67448, F1: 0.68204
+Used time: 4.605705
+Epoch=95, iter=84, loss=0.03077
+Evaluating...
+Accuracy: 0.990375
+Cor: 546, Pred TOT: 785, Gold TOT: 811
+P: 0.69554, R: 0.67324, F1: 0.68421
+Used time: 4.464048
+Epoch=96, iter=67, loss=0.03142
+Evaluating...
+Accuracy: 0.990375
+Cor: 551, Pred TOT: 797, Gold TOT: 811
+P: 0.69134, R: 0.67941, F1: 0.68532
+Used time: 4.321965
+Epoch=97, iter=50, loss=0.02682
+Evaluating...
+Accuracy: 0.990488
+Cor: 557, Pred TOT: 802, Gold TOT: 811
+P: 0.69451, R: 0.68681, F1: 0.69064
+Used time: 4.383935
+Epoch=98, iter=33, loss=0.01016
+Evaluating...
+Accuracy: 0.990488
+Cor: 558, Pred TOT: 804, Gold TOT: 811
+P: 0.69403, R: 0.68804, F1: 0.69102
+Used time: 4.379003
+Epoch=99, iter=16, loss=0.03565
+Epoch=99, iter=116, loss=0.02043
+Evaluating...
+Accuracy: 0.990510
+Cor: 560, Pred TOT: 807, Gold TOT: 811
+P: 0.69393, R: 0.69051, F1: 0.69221
+Used time: 4.385064
+Loading BERT model from entity_output/
+Moving to CUDA...
+# GPUs = 1
+# Overlap: 0
+Extracted 275 samples from 50 documents, with 811 NER labels, 138.455 avg input length, 226 max length
+Max Length: 68, max NER: 11
+Evaluating...
+Accuracy: 0.990645
+Cor: 577, Pred TOT: 834, Gold TOT: 811
+P: 0.69185, R: 0.71147, F1: 0.70152
+Used time: 4.324368
+Total pred entities: 834
+Output predictions to entity_output/ent_pred_dev.json..
